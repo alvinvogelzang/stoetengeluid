@@ -1,0 +1,207 @@
+<!doctype html>
+<html class="no-js"> 
+<head>
+<meta charset="utf-8">
+<title>Stoetengeluid.nl</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.tweet.css"/>
+<script src="js/modernizr.custom.95472.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script language="javascript" src="jquery.tweet.js" type="text/javascript"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+        fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+    });
+});
+</script>
+<script type='text/javascript'>
+         jQuery(function($){
+        $("#ticker").tweet({
+          username: "StoetenGeluid",
+          page: 1,
+          avatar_size: 48,
+          count: 15,
+          retweets: false,
+          loading_text: "Tweets aan het laden ..."
+        }).bind("loaded", function() {
+          var ul = $(this).find(".tweet_list");
+          var ticker = function() {
+            setTimeout(function() {
+              var top = ul.position().top;
+              var h = ul.height();
+              var incr = (h / ul.children().length);
+              var newTop = top - incr;
+              if (h + newTop <= 0) newTop = 0;
+              ul.animate( {top: newTop}, 1500 );
+              ticker();
+            }, 7000);
+          };
+          ticker();
+        });
+      });
+        </script>
+
+</head>
+
+<body id="wrapper">
+
+<section id="content_wrapper">
+
+<header>
+
+	<section id="logo">
+        <a href="http://www.stoetengeluid.nl">
+            <img src="afbeeldingen/logo_stoeten.jpg" alt="Logo Stoetengeluid">
+        </a>
+    </section>
+
+
+  <section id="facebook_button_wrapper">
+   <div class="fb-like"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.stoetengeluid.nl&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>  </div>
+  </section>
+
+	<nav>
+	<ul id="menu" class="nav_band">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="geluid_binnen.html">Geluid binnen</a></li>
+    <li><a href="geluid_buiten.html">Geluid buiten</a></li>
+    <li><a href="licht.html">Licht</a></li>
+    <li><a href="tijdwaarneming.html">Tijdwaarneming</a></li>
+    <li><a href="referenties.html">Referenties</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+        
+    <section id="banner">
+        <div class="slideshow">
+                <a href="geluid_binnen.html"><img src="afbeeldingen/geluid_binnen_banner.jpg" width="950" height="325" alt="Geluid binnen banner" /></a>
+                <a href="geluid_buiten.html"><img src="afbeeldingen/geluid_buiten_banner.jpg" width="950" height="325" alt="Geluid buiten banner"/></a>
+                <a href="licht.html"><img src="afbeeldingen/licht_banner.jpg" width="950" height="325" alt="Licht banner"/></a>
+                <a href="tijdwaarneming.html"><img src="afbeeldingen/tijdwaarneming_banner.jpg" width="950" height="325" alt="Tijdwaarneming banner"/></a>
+                <a href="referenties.html"><img src="afbeeldingen/referenties_banner.jpg" width="950" height="325" alt="Referenties banner"/></a>
+        </div>
+	</section>
+
+</header>
+
+
+<section id="main_section"> <!-- main section -->
+
+    <article class="inline_nav">
+    <h1 class="inline_headline"><a href="geluid_binnen.html">GELUID BINNEN</a></h1> 
+    <p>Een bedrijfsfeest, een koor optreden of een andere gelegenheid. Zonder goed geluid is het geen geslaagd evenement. De geluidssets die wij verhuren zijn divers. Bekijk <a class="inline_link" href="geluid_binnen.html"> geluid binnen </a> voor meer informatie.</p>
+    </article>
+    
+    <div class="separator"></div>
+    
+        <article class="inline_nav">
+    <h1 class="inline_headline"><a href="geluid_buiten.html">GELUID BUITEN</a></h1> 
+    <p>Als het nu gaat om een sportevenement een braderie of kerstmarkt. Geen evenement is voor ons te groot om te zorgen voor een goede geluidset. Ga naar <a class="inline_link" href="geluid_buiten.html">geluid buiten </a> voor meer informatie. </p>
+    </article>
+    
+       
+    <article class="inline_nav">
+    <h1 class="inline_headline"><a href="licht.html">LICHT</a></h1>
+    <p>Licht maakt sfeer. Niet alleen bij een dansparty maar ook bij een modeshow of bedrijfspresentatie. Wij zetten iedereen in het licht en de belichtings mogelijkheden zijn divers. Bekijk <a class="inline_link" href="licht.html">licht</a> voor meer informatie</p>
+    </article>
+    
+    <div class="separator"></div>
+    
+    
+    <article class="inline_nav">
+    <h1 class="inline_headline"><a href="tijdwaarneming.html">TIJDWAARNEMING</a></h1>
+    <p>Tijd speelt een belangrijke rol bij diverse sportevenementen. Neem bijvoorbeeld de paardensport of marathons. Bij ons krijgt iedereen voor elke sportactiviteit de juiste tijd. Bekijk <a class="inline_link" href="tijdwaarneming.html">tijdwaarneming</a> voor meer informatie </p>
+    </article>
+    
+   
+</section> <!-- end main section -->
+
+<aside id="usp">
+    <h1 class="usp_heading"></h1>
+    <div class="separator_2"></div>
+    <article class="usp_box">
+    <div class="usp_point"></div>
+    <h2 class="usp_title">Jarenlange ervaring</h2>
+    <p class="usp_text">Wij hebben jarenlange ervaring en brede kennis als het gaat over geluid, licht en tijdwaarneming.</p>
+    </article>
+    
+    <article class="usp_box">
+    <div class="usp_point"></div>
+    <h2 class="usp_title">Goede service en kwaliteit</h2>
+    <p class="usp_text">Bij Stoeten Geluid denken de mensen met u mee. Service en kwaliteit staan bij ons dan ook hoog in het vaandel.</p>
+    </article>
+    
+      <article class="usp_box">
+    <div class="usp_point"></div>
+    <h2 class="usp_title">Zekerheid van technische verzorging</h2>
+    <p class="usp_text">Wij stellen de apparatuur voor u af en desgewenst verzorgen wij ook het technische gedeelte.</p>
+    </article>
+    
+       
+</aside>
+
+</section> <!-- end content_wrapper section -->
+
+
+<footer>
+
+	<section id="footer_wrapper">
+	
+    <section class="footer_overons"> <!-- over ons -->
+    <h1 class="footer_title">Over ons</h1>
+    <div class="overons_icon"></div>
+    <p class="over_ons">"Stoeten Geluid is door de jaren heen een bekend verhuurbedrijf geworden in geluid, licht en tijdwaarneming. Het begon in de jaren ’70 als een hobby in het verhuren van een geluidssetje. Deze hobby is met de jaren uitgelopen in een erkend verhuurbedrijf. Inmiddels hebben wij een flink aantal jaren ervaring en een ruim aanbod in geluid, licht en tijdwaarneming." - Jan Stoeten </p>
+    </section> <!-- end over ons -->
+    
+    <section class="footer_twitter"> <!-- twitterfeed -->
+    <h1 class="footer_title"><a href="https://twitter.com/StoetenGeluid" target="_blank">Stoetengeluid op Twitter</a></h1>
+    <div class="twitter_icon"></div>
+    <div id="twitterfeed">
+ 
+    <div id="ticker" class="query"></div>
+    <div class="social_button">
+    <a href="https://twitter.com/StoetenGeluid" class="twitter-follow-button" data-show-count="false" data-lang="nl">@StoetenGeluid volgen</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+    </div> <!-- end twitterfeed !-->
+    
+    </section> <!-- end footer_twitter -->
+    
+    <section class="footer_contact"> <!-- contact -->
+    <h1 class="footer_title">Contact</h1>
+    <div class="contact_icon"></div>
+     <p class="over_ons">
+     	Stoeten Geluid<br>
+        De Kamp 1<br>
+        8061 BJ Hasselt<br>
+        KvK: 05047366<br>
+        Telefoon: 038 - 4771861<br>
+        Mobiel: 06 - 50807369<br>
+        E-mail:<a href="mailto:janstoeten@hotmail.com" class="email"> janstoeten@hotmail.com</a>
+     </p>
+    </section> <!-- end contact -->
+    
+    </section> <!-- end footer_wrapper -->
+
+
+   
+
+
+
+<section id="copyright">
+    <div class="copyright_text">
+    Copyright © Stoetengeluid.nl 2012
+    </div>
+</section>
+
+</footer>
+
+
+
+
+</body>
+</html>

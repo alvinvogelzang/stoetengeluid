@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<title>Stoetengeluid.nl</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.tweet.css"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script language="javascript" src="jquery.tweet.js" type="text/javascript"></script>
+<script src="js/modernizr.custom.95472.js"></script>
+<script type='text/javascript'>
+         jQuery(function($){
+        $("#ticker").tweet({
+          username: "StoetenGeluid",
+          page: 1,
+          avatar_size: 48,
+          count: 15,
+          retweets: false,
+          loading_text: "Tweets aan het laden ..."
+        }).bind("loaded", function() {
+          var ul = $(this).find(".tweet_list");
+          var ticker = function() {
+            setTimeout(function() {
+              var top = ul.position().top;
+              var h = ul.height();
+              var incr = (h / ul.children().length);
+              var newTop = top - incr;
+              if (h + newTop <= 0) newTop = 0;
+              ul.animate( {top: newTop}, 1500 );
+              ticker();
+            }, 7000);
+          };
+          ticker();
+        });
+      });
+        </script>
+</head>
+
+<body id="wrapper">
+
+<section id="content_wrapper">
+
+<header>
+
+    <section id="logo">
+        <a href="http://www.stoetengeluid.nl">
+            <img src="afbeeldingen/logo_stoeten.jpg">
+        </a>
+    </section>
+
+   <section id="facebook_button_wrapper">
+   <div class="fb-like"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.stoetengeluid.nl&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>  </div>
+  </section>
+
+    <nav>
+    <ul id="menu" class="nav_band">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="geluid_binnen.html">Geluid binnen</a></li>
+    <li><a href="geluid_buiten.html">Geluid buiten</a></li>
+    <li><a href="licht.html">Licht</a></li>
+    <li><a href="tijdwaarneming.html">Tijdwaarneming</a></li>
+    <li><a href="referenties.html" class="active">Referenties</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+        
+    <section id="header_image">
+    <img src="afbeeldingen/referenties.jpg">
+	</section>
+
+</header>
+
+<section id="main_section"> <!-- main section -->
+
+    <article class="product_information">
+    <h1 class="product_title">Referenties</h1>
+    
+    <h2 class="referenties_text_title">Carnavalsvereniging 'De Hazelnötten’</h2>
+    <p class="product_text">De Dynacordset geplaatst en het licht verzorgt t.b.v. hun 44 jarig bestaan.
+    Het was een spannende avond want 44 jaar carnaval betekend een jubileumjaar. Dat feest werd gehouden in een gedeelte van sporthal 'de Prinsenhof' in Hasselt.
+    De geluid-set bestaat uit 2x 1500 watt Dynacord met een mengtafel die voorzien is van cd spelers voor het draaien van carnavals-hits en de muziek voor al die dansmariekes die hun optreden verzorgen zij werden op spectaculaire wijze in de sfeerverlichting geplaatst, de hofstal spreekmeester gebruikte een draadloze microfoon t.b.v. aankondigen van de gastverenigingen. En om de 44ste hoogheid goed uit te lichten wordt onze volgspot ingezet zodat de 44ste hoogheid goed in het licht (zonnetje) werd gezet.</p>
+     
+    <h2 class="referenties_text_title">Halve marathon van Zwolle</h2>
+     
+    <p class="product_text">Zolang als de Halve marathon van Zwolle wordt gelopen doen wij daar het geluid.
+    Een groot gedeelte van het centrum in Zwolle wordt onder het geluid gezet zodat zowel het publiek als de lopers horen wat er nabij de finishlijn zich allemaal afspeelt. Honderden meters geluidskabels en tientallen hoornspeakers worden langs het parcours in de binnenstad geplaatst. Op de marathon dag zelf wordt er bij de finishlijn, als extra geluidsondersteuning, de Dynacordset van 2x 1500 ingezet. De beide speakers ( presentatoren ) die zowel de lopers als het publiek aanmoedigen hebben een Sennheiser draadloos microfoon tot hun beschikken.</p>
+     
+    <h2 class="referenties_text_title">Aaltjesdag Harderwijk</h2>
+     
+    <p class="product_text">De jaarlijke Aaltjesdag in Harderwijk is een familiedag met een grootse braderie, aangevuld met oude ambachten en demo's. Dat gebeurd allemaal langs de Boulevard en de speelweide. Het evenement is zo groot dat er een omroep geluids-set moet worden geplaatst langs het gehele parcours. Ook hier worden hoornspeakers geplaatst aan de bestaande lantaarnpalen. Tientallen hoornspeakers en honderden meters geluidskabels worden aangebracht in een speciale unit en wordt de omroepversterker met microfoon geïnstalleerd.</p>
+     
+     
+    <h2 class="referenties_text_title">Mountainbike wedstrijden Havelte berg</h2>
+     
+    <p class="product_text">Langs het gehele parcours van start tot finish worden honderden meters kabels uitgelegd en ingegraven. Tientallen speakers zowel geluidszuilen als ook hoornspeakers worden langs het parcours in het veld geplaatst. Waarbij vooral nabij de verzorging extra geluid komt te staan t.b.v. de verzorging van de wielrenners. Bij podiumwagen staat voor de prijsuitreiking een Bose geluids-set opgesteld. De presentator kan gebruik maken van draadloze microfoons.</p>
+    </article>
+
+     <h2 class="referenties_text_title">Feestjes en partijen</h2>
+     
+    <p class="product_text">Er was weer eens een feestje of wij daar de zaal in sfeerlicht konden aanbrengen.
+    De sfeerverlichting hing en het gehele buffet kon zo worden belicht. 
+    Ook het jubilerende echtpaar werd in de spots gezet.<br><br>
+     
+    Dan de vraag of ook de dansvloer wat disco-achtige sfeerverlichting kon komen.
+    Maar natuurlijk is dat mogelijk zo werden er 2x globo's van het merk Martin boven de dansvloer aangebracht.
+    Even goed afstellen en de gehele dansvloer zit onder bewegend licht met div. figuren.
+    Cateraar blij en de familie tevreden.
+    Het feestje kon niet meer stuk het was weer een topavond.</p>
+    </article>
+    
+    
+</section> <!-- end main section -->
+
+<aside id="apparatuur">
+
+    <h1 class="apparatuur_heading">Onze referenties</h1>
+    <div class="separator_2"></div>
+    <article class="apparatuur_lijst">
+    <h3 class="referenties_title">Gemeente Zwartewaterland</h3>
+    <p class="apparatuur_text">
+    - Stichting Brommersprint Genemuiden<br>
+    - Stichting Ballonfestijn Hasselt<br>
+    - Stichting Hassailt<br>
+    - Stichting Dedemsvaria<br>
+    - Staatsbosbeheer "Kijk en Doe Dag" Kuinre
+    </p>
+    
+ 
+    <h3 class="referenties_title">Autorodeo</h3>
+    <p class="apparatuur_text">
+    - Staphorst<br>
+    - Dedemsvaart<br>
+    - Oudleusen
+    </p>
+     
+    <h3 class="referenties_title">Marathonloop</h3>
+    <p class="apparatuur_text">
+    - Stichting marathonloop Zwolle Zuid<br>
+    - Stichting Halve Marathonloop Zwolle<br>
+    - Salverda/ Berkum loop  Berkum<br>
+    - Stichting marathonloop Zwolle<br>
+    - Atletiekvereniging Cialfo Epe
+    </p>
+     
+    <h3 class="referenties_title">Rijverenigingen</h3>
+    <p class="apparatuur_text">
+    - Rijver. Hasselt<br>
+    - Rijvereniging Vollenhove<br>
+    - Flevoruiters Dronten<br>
+    - Marleruiters Hattem<br>
+    - KWPN Noord Dronten<br>
+    - Flevomanege Dronten
+    </p>
+     
+    <h3 class="referenties_title">Ondernemersverenigingen</h3>
+    <p class="apparatuur_text">
+    - Dedemsvaart<br>
+    - Hasselt<br>
+    - Nieuwleusen<br>
+    - Slagharen<br>
+    - Stichting Aaltjesdag Harderwijk
+    </p>
+     
+    <h3 class="referenties_title">Toneelvereniging Genemuiden</h3>
+    <p class="apparatuur_text">
+    - Rk kerk Hasselt sacramentendag buitendienst<br>
+    - Gezamelijke kerken Hasselt  Euifeest-tentdienst n.a.v afsluiting feestweek
+    </p>
+
+     
+
+     </p>
+    </article>
+    
+</aside>
+
+
+</section> <!-- end content_wrapper section -->
+
+<footer>
+
+	<section id="footer_wrapper">
+	
+    <section class="footer_overons"> <!-- over ons -->
+    <h1 class="footer_title">Over ons</h1>
+    <div class="overons_icon"></div>
+     <p class="over_ons">"Stoeten Geluid is door de jaren heen een bekend verhuurbedrijf geworden in geluid, licht en tijdwaarneming. Het begon in de jaren ’70 als een hobby in het verhuren van een geluidssetje. Deze hobby is met de jaren uitgelopen in een erkend verhuurbedrijf. Inmiddels hebben wij een flink aantal jaren ervaring en een ruim aanbod in geluid, licht en tijdwaarneming." - Jan Stoeten </p>
+    </section> <!-- end over ons -->
+    
+      <section class="footer_twitter"> <!-- twitterfeed -->
+    <h1 class="footer_title"><a href="https://twitter.com/StoetenGeluid" target="_blank">Stoetengeluid op Twitter</a></h1>
+    <div class="twitter_icon"></div>
+    <div id="twitterfeed">
+ 
+    <div id="ticker" class="query"></div>
+     <div class="social_button">
+    <a href="https://twitter.com/StoetenGeluid" class="twitter-follow-button" data-show-count="false" data-lang="nl">@StoetenGeluid volgen</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+    </div> <!-- end twitterfeed !-->
+    </section> <!-- end footer_twitter -->
+    
+    
+    <section class="footer_contact"> <!-- contact -->
+    <h1 class="footer_title">Contact</h1>
+    <div class="contact_icon"></div>
+     <p class="over_ons">
+     	Stoeten Geluid<br>
+        De Kamp 1<br>
+        8061 BJ Hasselt<br>
+        KvK: 05047366<br>
+        Telefoon: 038 - 4771861<br>
+        Mobiel: 06 - 50807369<br>
+        E-mail:<a href="mailto:janstoeten@hotmail.com" class="email"> janstoeten@hotmail.com</a>
+     </p>
+    </section> <!-- end contact -->
+    
+    </section> <!-- end footer_wrapper -->
+   
+
+</footer>
+
+<section id="copyright">
+    <div class="copyright_text">
+    Copyright © Stoetengeluid.nl 2012
+    </div>
+</section>
+
+
+</body>
+</html>

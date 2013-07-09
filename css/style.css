@@ -1,0 +1,581 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-color:#FFF;
+	color: #333333;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0; 
+	padding: 0; 
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+
+a img{
+border:0;
+}
+
+#wrapper {
+	width: 100%;
+	height: 200px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+#logo {
+	height: 80px;
+	width: 340px;
+	float: left;
+}
+
+#facebook_button_wrapper {
+	width: 600px;
+	height: 30px;
+	float: left;
+}
+
+.fb-like {
+	float:right;
+}
+
+nav {
+	width: 600px;
+	padding-top: 0px;
+	float: left;
+}
+
+ul {
+	height: auto;
+	font: .8em 'AurulentSansRegular', Arial, sans-serif; letter-spacing: 0;
+    list-style: none;
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+	
+}
+li ul {
+    display: none;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+	background-color:#FFF;
+    color: #333333;
+    text-align: center;
+	padding: 0.9em;
+	padding-right: 0.8em;
+	padding-left: 0.8em;
+	
+}
+ul li a:hover, .active {
+text-decoration:underline;
+background-color:#FFF;
+}
+li:hover ul {
+	background-color:#FFF;
+    display: block;
+    position: absolute;
+	}
+li:hover li {
+    float: none;
+    }
+	
+li:hover li a:hover {
+background: url('afbeeldingen/nav_gradient.png') repeat-x;
+}
+
+#banner {
+	float: left;
+	margin-bottom: 60px;
+}
+
+#header_image {
+	float: left;
+	margin-bottom: 30px;
+}
+
+#content_wrapper {
+	width: 950px;
+	margin: 0 auto;
+}
+
+#main_section {
+	width: 680px;
+	float: left;
+}
+
+.inline_nav {
+	width: 280px;
+	margin-right: 20px;
+	float: left;
+}
+
+.inline_nav > p {
+	*height: 200px; /* IE7 only */
+}
+
+.inline_nav p {
+	width: 280px;
+	float: left;
+	line-height: 1.5em;
+	margin-bottom: 70px;
+}
+
+.inline_link{ 
+	font-weight: bold;
+	color:#0066cc;
+}
+
+.inline_link:hover{ 
+	text-decoration: underline;
+}
+
+.inline_headline {
+	margin: 0px;
+}
+
+.inline_headline a {
+	margin: 0px;
+	color: #FFF;
+	background-color: #0066cc;
+	padding: 5px;
+	margin-bottom:1em;
+	font-size: 1.2em;
+	font-weight:lighter;
+	text-decoration: none;
+	float: left;
+
+	/*Transition*/
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;
+
+}
+
+.inline_headline :hover {
+	background:#666;
+}
+
+.separator {
+	width: 1px;
+	height: 170px;
+	background: #666;
+	margin-left: 20px;
+	margin-right: 40px;
+	float: left;
+}
+
+h1.product_title {
+	width: 100%;
+	color: #0066cc;
+	font-size: 1.8em;
+	font-weight:lighter;
+	margin-bottom: 1em;
+	float: left;
+}
+
+h1.contact_title {
+	color: #0066cc;
+	width: 950px;
+	font-size: 1.8em;
+	font-weight:lighter;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	float: left;
+}
+
+h1.contact_heading {
+	font-weight:bold;
+	margin: 0 auto;
+	float: left;
+}
+
+p.contact_gegevens {
+	line-height: 1.5em;
+}
+
+p.product_text {
+	width: 650px;
+	line-height: 1.5em;
+	margin-bottom: 2em;
+	float: left;
+}
+
+.contact_text_block {
+	background-color: #CCC;
+	width: 175px;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	margin-right: 40px;
+	padding: 15px;
+	float: left;
+}
+
+aside#usp {
+	width: 240px;
+	float: right;
+}
+
+aside#apparatuur {
+	width: 240px;
+	margin-top: 50px;
+	float: right;
+}
+
+h1.usp_heading {
+	width: 225px;
+	height: 30px;
+	margin: 0px;
+	margin-bottom: 5px;
+	background-image:url(../afbeeldingen/usp_titel.png);
+	background-repeat:no-repeat;
+	float: left;
+}
+
+h1.apparatuur_heading {
+	width: 225px;
+	color:#0066cc;
+	font-size: 1em;
+	margin: 0px;
+	margin-bottom: 2px;
+	float: left;
+}
+
+.separator_2 {
+	width: 225px;
+	height: 1px;
+	background: #666;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.usp_box {
+	margin-top: 50px;
+}
+
+.usp_point {
+	width: 40px;
+	height: 80px;
+	background-image:url(../afbeeldingen/usp_punt.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+
+h2.usp_title {
+	width: 180px;
+	font-size:0.9em;
+	font-weight: bold;
+	margin: 0px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+p.usp_text {
+	width: 180px;
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	float: left;
+}
+
+p.apparatuur_text {
+	width: 180px;
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 0.8em !important;
+	line-height: 1.5em;
+	float: left;
+}
+
+.fancybox > img {
+	margin-right: 25px;
+	padding: 8px;
+background: white;
+border: 1px solid #BBB;
+margin: 7px 14px 7px 0;
+height: 125px;
+}
+
+
+.contact_button {
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.referenties_title {
+	font-size: 0.8em;
+	font-weight: bold;
+	float: left;
+}
+
+.referenties_text_title {
+	width: 650px;
+	font-weight: bold;
+	float: left;
+}
+
+
+ footer {
+	height: auto;
+	width: 100%;
+	margin-top: 50px;
+	background-color: #CCC;
+	float: left;
+	
+} 
+
+#footer_wrapper {
+	width: 950px;
+	height: auto;
+	padding-top: 40px;
+	*padding-bottom: 30px;
+	margin: 0 auto;
+
+}
+
+
+.footer_overons {
+	width: 250px;
+	float: left;
+}
+
+.footer_twitter {
+	width: 400px;
+	margin-left: 80px;
+	float: left;
+}
+
+.footer_contact {
+	width: 210px;
+	float: left;
+}
+
+.overons_icon {
+	width: 50px;
+	height: 30px;
+	margin-left: 5px;
+	margin-top: -10px;
+	background-image: url(../afbeeldingen/overons_icon.png);
+	background-repeat:no-repeat;
+	float: left;
+}
+
+.twitter_icon {
+	width: 50px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: -5px;
+	margin-bottom: 20px;
+	background-image: url(../afbeeldingen/impressie_icon.png);
+	background-repeat:no-repeat;
+	float: left;
+}
+
+.contact_icon {
+	width: 50px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: -3px;
+	background-image: url(../afbeeldingen/contact_icon.png);
+	background-repeat:no-repeat;
+	float: left;
+}
+
+a.email { 
+	text-decoration:none;
+	color:#0066cc;
+}
+
+h1.footer_title {
+	color: #0066cc;
+	font-size: 1.4em;
+	font-weight:lighter;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	float: left;
+}
+
+p.over_ons {
+	*width: 250px;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	margin-bottom: 40px;
+	float: left;
+}
+
+#copyright {
+	width: 100%;
+	height: 30px;
+	background-color: #999999;
+	float: left;
+}
+
+.copyright_text {
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: #FFF;
+	font-size: 0.7em;
+}
+
+#twitterfeed{
+	width: 350px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.slideshow { 
+	height: 325px; 
+	width: 950px; 
+	margin: auto;
+}
+.slideshow img { background-color: #eee; }
+	
+
+
+
+/*-------------------------------------
+FORM CORE
+------------------------------------------*/
+
+form#contact fieldset {
+	margin: 0;
+	border: 0;
+	background-color: #fff;
+	width: 400px;
+	text-align: left;
+	float:left;
+}
+
+form#contact input[type="text"], input[type="url"], 
+input[type="email"], input[type="tel"], textarea {
+	margin: 3px 0 20px 0;
+	padding: 6px; 
+	width: 260px; 
+	font-family: arial, sans-serif; 
+	font-size: 12px; 
+	border: 1px solid #ccc;
+    background: -webkit-gradient(linear, left top, left 15, from(#FFFFFF), color-stop(4%, #f4f4f4), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #f4f4f4 1px, #FFFFFF 15px);
+}
+
+form#contact textarea {
+	width: 400px; 
+	height: 150px;
+	float: left;
+}
+
+form#contact label {
+	display: block;
+	font-size: 13px;
+	color: #666;
+	font-weight: bold;
+}
+
+form#contact label.error { 
+	width: 270px;
+	margin: 3px 0 0 0;
+	display: block;
+	color: #cf0101;                              
+	font-size: 11px; 
+	text-align: right;
+}
+
+form#contact .placeholder {
+	color: #aaa;
+}
+
+form#contact .button {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 5px 15px 5px 15px;
+	background-color: #0066cc;
+	border: none;
+	color: #fff;
+	float: left;
+}
+
+form#contact .button:hover {
+	background-color: #666;
+	cursor: pointer;
+}
+
+form#contact .button:active {
+	margin-top: 16px;
+	background-color: #0066cc;
+	cursor: pointer;
+}
+
+.thanks {
+	font-size: 2em;
+}
+
+

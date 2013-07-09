@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<title>Stoetengeluid.nl</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.tweet.css"/>
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script src="js/modernizr.custom.95472.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script language="javascript" src="jquery.tweet.js" type="text/javascript"></script>
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+</script>
+<script type='text/javascript'>
+         jQuery(function($){
+        $("#ticker").tweet({
+          username: "StoetenGeluid",
+          page: 1,
+          avatar_size: 48,
+          count: 15,
+          retweets: false,
+          loading_text: "Tweets aan het laden ..."
+        }).bind("loaded", function() {
+          var ul = $(this).find(".tweet_list");
+          var ticker = function() {
+            setTimeout(function() {
+              var top = ul.position().top;
+              var h = ul.height();
+              var incr = (h / ul.children().length);
+              var newTop = top - incr;
+              if (h + newTop <= 0) newTop = 0;
+              ul.animate( {top: newTop}, 1500 );
+              ticker();
+            }, 7000);
+          };
+          ticker();
+        });
+      });
+        </script>
+</head>
+
+<body id="wrapper">
+
+<section id="content_wrapper">
+
+<header>
+
+    <section id="logo">
+        <a href="http://www.stoetengeluid.nl">
+            <img src="afbeeldingen/logo_stoeten.jpg">
+        </a>
+    </section>
+
+    <section id="facebook_button_wrapper">
+   <div class="fb-like"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.stoetengeluid.nl&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>  </div>
+  </section>
+
+    <nav>
+    <ul id="menu" class="nav_band">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="geluid_binnen.html" class="active">Geluid binnen</a></li>
+    <li><a href="geluid_buiten.html">Geluid buiten</a></li>
+    <li><a href="licht.html">Licht</a></li>
+    <li><a href="tijdwaarneming.html">Tijdwaarneming</a></li>
+    <li><a href="referenties.html">Referenties</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+        
+    <section id="header_image">
+    <img src="afbeeldingen/geluid_binnen.jpg">
+	</section>
+
+</header>
+
+<section id="main_section"> <!-- main section -->
+
+    <article class="product_information">
+    <h1 class="product_title">Geluidsinstallaties binnen</h1>
+    <p class="product_text">Naast de bekende geluidszuilen die worden gebruikt bij diverse binnen evenementen bezitten wij ook een complete Bose 802 set van 2x 750 watt. Voor het grote werk kunnen wij uw evenement voorzien van een complete Dynacordset van 2x 1500 watt die goed is voor zo'n 1000 personen.<br><br>
+
+    Wij verzorgen onder andere het geluid bij modeshows, bedrijfspresentaties, diverse soorten party’s en bij thema- en discoavonden. </p>
+    </article>
+
+  
+
+    <a class="fancybox" rel="gallery1" href="afbeeldingen/geluid_binnen/geluid_binnen_1.jpg"><img src="afbeeldingen/geluid_binnen/geluid_binnen_1_klein.jpg" alt=""  /></a>
+    <a class="fancybox" rel="gallery1" href="afbeeldingen/geluid_binnen/geluid_binnen_2.jpg"><img src="afbeeldingen/geluid_binnen/geluid_binnen_2_klein.jpg" alt="" /></a>
+    <a class="fancybox" rel="gallery1" href="afbeeldingen/geluid_binnen/geluid_binnen_3.jpg"><img src="afbeeldingen/geluid_binnen/geluid_binnen_3_klein.jpg" alt="" /></a>
+
+ 
+
+
+    
+    
+</section> <!-- end main section -->
+
+<aside id="apparatuur">
+
+    <h1 class="apparatuur_heading">De apparatuur</h1>
+    <div class="separator_2"></div>
+    <article class="apparatuur_lijst">
+    <p class="apparatuur_text">
+     - Bose 802 set 2 x 750 watt<br>
+     - Dynacord set 2 x 1500 watt<br>
+     
+
+     </p>
+    </article>
+    
+</aside>
+
+
+</section> <!-- end content_wrapper section -->
+
+<footer>
+
+	<section id="footer_wrapper">
+	
+    <section class="footer_overons"> <!-- over ons -->
+    <h1 class="footer_title">Over ons</h1>
+    <div class="overons_icon"></div>
+    <p class="over_ons">"Stoeten Geluid is door de jaren heen een bekend verhuurbedrijf geworden in geluid, licht en tijdwaarneming. Het begon in de jaren ’70 als een hobby in het verhuren van een geluidssetje. Deze hobby is met de jaren uitgelopen in een erkend verhuurbedrijf. Inmiddels hebben wij een flink aantal jaren ervaring en een ruim aanbod in geluid, licht en tijdwaarneming." - Jan Stoeten </p>
+    </section> <!-- end over ons -->
+    
+     <section class="footer_twitter"> <!-- twitterfeed -->
+    <h1 class="footer_title"><a href="https://twitter.com/StoetenGeluid" target="_blank">Stoetengeluid op Twitter</a></h1>
+    <div class="twitter_icon"></div>
+    <div id="twitterfeed">
+ 
+    <div id="ticker" class="query"></div>
+     <div class="social_button">
+    <a href="https://twitter.com/StoetenGeluid" class="twitter-follow-button" data-show-count="false" data-lang="nl">@StoetenGeluid volgen</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+    </div> <!-- end twitterfeed !-->
+    </section> <!-- end footer_twitter -->
+    
+    
+    <section class="footer_contact"> <!-- contact -->
+    <h1 class="footer_title">Contact</h1>
+    <div class="contact_icon"></div>
+     <p class="over_ons">
+     	Stoeten Geluid<br>
+        De Kamp 1<br>
+        8061 BJ Hasselt<br>
+        KvK: 05047366<br>
+        Telefoon: 038 - 4771861<br>
+        Mobiel: 06 - 50807369<br>
+        E-mail:<a href="mailto:janstoeten@hotmail.com" class="email"> janstoeten@hotmail.com</a>
+     </p>
+    </section> <!-- end contact -->
+    
+    </section> <!-- end footer_wrapper -->
+   
+
+</footer>
+
+<section id="copyright">
+    <div class="copyright_text">
+    Copyright © Stoetengeluid.nl 2012
+    </div>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+.tweet_text, .tweet_text a {
+	float: left;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+}
+
+.tweet_time a {
+	float:left;
+	text-align: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: #666666 !important;
+}
+
+.tweet_avatar {
+	height: 10em;
+	margin-right: 1em;
+	padding: 0;
+}
+
+	.tweet_list {
+		-webkit-border-radius: 0.5em;
+		-moz-border-radius: 0.5em;
+		border-radius: 0.5em;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		
+	}
+	
+		.tweet_list li {
+			overflow-y: auto;
+			overflow: hidden;
+			list-style-type: none;
+		}
+		
+			.tweet_list li a {
+				
+			}
+		
+		.tweet_list .tweet_even {
+			
+		}
+		
+		.tweet_list .tweet_avatar {
+			float: left;
+		}
+		
+			.tweet_list .tweet_avatar img {
+				vertical-align: middle;
+			}
+
+#ticker {
+        height: 11em;
+        width: 20em;
+        margin-bottom: 0.9em;
+        overflow-y: hidden;
+        position: relative;
+      }
+      #ticker ul.tweet_list {
+        position: absolute;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+      #ticker ul.tweet_list li {
+        height: 8em;
+      }
+
+#ticker a {
+	background-color: #CCC;
+	color:#0066cc;
+}
+
